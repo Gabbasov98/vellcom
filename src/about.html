@@ -1,0 +1,211 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html')
+        <main class="content">
+
+            <secton class="main main--about">
+                <div class="main__slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image: url(img/main-bg.webp);"></div>
+                        <div class="swiper-slide" style="background-image: url(img/main-bg2.webp);"></div>
+                    </div>
+                </div>
+            </secton>
+
+            <section class="breadcrumbs">
+                <div class="container">
+                    <a href="index.html" class="breadcrumbs__item">Главная</a>
+                    <a href="" class="breadcrumbs__item">Для частных лиц</a>
+                    <span class="breadcrumbs__item">Интернет</span>
+                </div>
+            </section>
+
+            <section class="anchor">
+                <div class="container">
+                    <div class="anchor__inner">
+                        <a href="#about" class="anchor__link">О компании</a>
+                        <a href="#advantages" class="anchor__link">Преимущества</a>
+                        <a href="#services" class="anchor__link">Услуги</a>
+                        <a href="#team" class="anchor__link">Руководство</a>
+                        <a href="#feedback" class="anchor__link">Отзывы</a>
+                        <a href="#history" class="anchor__link">История </a>
+                        <a href="#docs" class="anchor__link">Документы</a>
+                        <a href="#info" class="anchor__link">Оставить заявку</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="about">
+                @@include('components/page-blocks/_about.html',{"title":"О компании"})
+            </section>
+
+            <section id="advantages" class="advantages">
+                @@include('components/page-blocks/_advantages.html')
+            </section>
+
+            <section id="services" class="about-services before-bg">
+                <div class="container">
+                    <div class="about-services__title display2">Услуги</div>
+                    <div class="about-services__groups">
+                        <div class="about-services__group">
+                            <div class="about-services__subtitle display3">Для частных лиц:</div>
+                            <div class="about-services__slider about-services__slider1 swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="about-services__item swiper-slide" style="background-image: url(img/service.jpg);">
+                                        <div class="about-services__item-title">Интернет</div>
+                                    </div>
+                                    <div class="about-services__item swiper-slide" style="background-image: url(img/service2.png);">
+                                        <div class="about-services__item-title">Телевидение</div>
+                                    </div>
+                                    <div class="about-services__item swiper-slide" style="background-image: url(img/service3.png);">
+                                        <div class="about-services__item-title">Умный домофон</div>
+                                    </div>
+                                    <div class="about-services__item swiper-slide" style="background-image: url(img/service4.png);">
+                                        <div class="about-services__item-title">Видеонаблюдение</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-services__group">
+                            <div class="about-services__subtitle display3">Для частных лиц:</div>
+                            <div class="about-services__slider about-services__slider2 swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="about-services__item2 swiper-slide" style="background-image: url(img/service5.jpg);">
+                                        <div class="about-services__item2-title">Интернет</div>
+                                    </div>
+                                    <div class="about-services__item2 swiper-slide" style="background-image: url(img/service6.png);">
+                                        <div class="about-services__item2-title">IT-Аутсорс </div>
+                                    </div>
+                                    <div class="about-services__item2 swiper-slide" style="background-image: url(img/service7.png);">
+                                        <div class="about-services__item2-title">Телефония</div>
+                                    </div>
+                                    <div class="about-services__item2 swiper-slide" style="background-image: url(img/service8.png);">
+                                        <div class="about-services__item2-title">Аренда каналов связи</div>
+                                    </div>
+                                    <div class="about-services__item2 swiper-slide" style="background-image: url(img/service9.png);">
+                                        <div class="about-services__item2-title">СМР и ПИР в слаботочных системах</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="team" class="team">
+                <div class="container">
+                    <div class="team__inner">
+                        <div class="slider__top">
+                            <div class="team__title display2">Руководство</div>
+                            <div class="slider__nav">
+                                <div class='swiper-button-prev'>
+                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.3854 6.14331L9.85005 0.140417C10.0641 -0.0515111 10.4051 -0.0460007 10.6118 0.152728C10.8134 0.346591 10.8134 0.653916 10.6118 0.84775L4.52801 6.49697L10.6118 12.1462C10.8221 12.3415 10.8221 12.6582 10.6118 12.8535C10.4014 13.0488 10.0604 13.0488 9.85005 12.8535L3.3854 6.85064C3.17508 6.65528 3.17508 6.33863 3.3854 6.14331Z" fill="#3D3D3D"/>
+                                    </svg>
+                                </div>
+                                <div class='swiper-button-next'>
+                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.6146 6.14331L4.14995 0.140417C3.93594 -0.0515111 3.5949 -0.0460007 3.38821 0.152728C3.18657 0.346591 3.18657 0.653916 3.38821 0.84775L9.47199 6.49697L3.38821 12.1462C3.17789 12.3415 3.17789 12.6582 3.38821 12.8535C3.5986 13.0488 3.9396 13.0488 4.14995 12.8535L10.6146 6.85064C10.8249 6.65528 10.8249 6.33863 10.6146 6.14331Z" fill="#3D3D3D"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide team-card">
+                                    @@include('components/cards/_team-card.html')
+                                </div>
+                                <div class="swiper-slide team-card">
+                                    @@include('components/cards/_team-card.html')
+                                </div>
+                                <div class="swiper-slide team-card">
+                                    @@include('components/cards/_team-card.html')
+                                </div>
+                                <div class="swiper-slide team-card">
+                                    @@include('components/cards/_team-card.html')
+                                </div>
+                                <div class="swiper-slide team-card">
+                                    @@include('components/cards/_team-card.html')
+                                </div>
+                                <div class="swiper-slide team-card">
+                                    @@include('components/cards/_team-card.html')
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="feedback" class="feedback">
+                @@include('components/page-blocks/_feedback.html')
+            </section>
+
+            <section id="history" class="history">
+                <div class="container">
+                    <div class="history__title display2">История развития</div>
+                    <div class="history__items">
+                        <span class="history__line history__line1"></span>
+                        <span class="history__line history__line2"></span>
+                        <span class="history__line history__line3"></span>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide history-card">
+                                    @@include('components/cards/_history-card.html',{"year":"2000"})
+                                </div>
+                                <div class="swiper-slide history-card">
+                                    @@include('components/cards/_history-card.html',{"year":"2010"})
+                                </div>
+                                <div class="swiper-slide history-card">
+                                    @@include('components/cards/_history-card.html',{"year":"2012"})
+                                </div>
+                                <div class="swiper-slide history-card">
+                                    @@include('components/cards/_history-card.html',{"year":"2015"})
+                                </div>
+                                <div class="swiper-slide history-card">
+                                    @@include('components/cards/_history-card.html',{"year":"2017"})
+                                </div>
+                                <div class="swiper-slide history-card">
+                                    @@include('components/cards/_history-card.html',{"year":"2021"})
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="docs" class="docs">
+                <div class="container">
+                    <div class="docs__title display2">Документы</div>
+                    <div class="docs__items">
+                        <a href="" class="docs__item">@@include('components/ui/_doc-link.html',{"title":"Название документа"})</a>
+                        <a href="" class="docs__item">@@include('components/ui/_doc-link.html',{"title":"Название документа"})</a>
+                        <a href="" class="docs__item">@@include('components/ui/_doc-link.html',{"title":"Название документа"})</a>
+                        <a href="" class="docs__item">@@include('components/ui/_doc-link.html',{"title":"Название документа"})</a>
+                        <a href="" class="docs__item">@@include('components/ui/_doc-link.html',{"title":"Название документа"})</a>
+                        <a href="" class="docs__item">@@include('components/ui/_doc-link.html',{"title":"Название документа"})</a>
+                        <a href="" class="docs__item">@@include('components/ui/_doc-link.html',{"title":"Название документа"})</a>
+                        <a href="" class="docs__item">@@include('components/ui/_doc-link.html',{"title":"Название документа"})</a>
+                        <a href="" class="docs__item">@@include('components/ui/_doc-link.html',{"title":"Название документа"})</a>
+                        <a href="" class="docs__item">@@include('components/ui/_doc-link.html',{"title":"Название документа"})</a>
+                        <a href="" class="docs__item">@@include('components/ui/_doc-link.html',{"title":"Название документа"})</a>
+                        <a href="" class="docs__item">@@include('components/ui/_doc-link.html',{"title":"Название документа"})</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="info">
+                @@include('components/page-blocks/_info.html')
+            </section>
+
+        </main>
+        @@include('components/page-blocks/_footer.html')
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+@import "_header";
+@import "_footer";
+@import "../vars";
+html {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: $font1;
+  font-weight: 400;
+  color: $black;
+  min-height: 100vh;
+  &.fixed-body {
+    overflow-y: hidden;
+  }
+}
+
+.wrapper {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1830px;
+  margin: 0 auto;
+  padding: 0 30px;
+  @media screen and (max-width: 992px) {
+    padding: 0 20px;
+  }
+}

@@ -1,0 +1,395 @@
+@import "../vars";
+.main2{
+  background-size: cover;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+  &::before{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(78.44deg, rgba(7, 39, 87, 0.7) 43.31%, rgba(30, 64, 150, 0) 80.43%);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+  }
+  &__inner{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left{
+    color: #fff;
+    padding-left: 66px;
+  }
+  &__right{
+    flex-shrink: 0;
+    margin-left: 40px;
+  }
+  &__title{
+    position: relative;
+    word-break: break-word;
+    &::before{
+      content: '';
+      position: absolute;
+      margin-right: 20px;
+      right: 100%;
+      top: 42px;
+      width: 44px;
+      height: 59px;
+      background-image: url(../img/mark.svg);
+      background-size: 100% auto;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    &--small{
+      font-size: 99px;
+      &::before{
+        top: 22px;
+      }
+    }
+    &--small2{
+      font-size: 106px;
+    }
+    span{
+      color: $primary;
+    }
+  }
+  &__desc{
+    max-width: 1060px;
+    margin-top: 20px;
+  }
+  &__subtitle{
+    font-weight: 300;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    margin-top: 40px;
+  }
+  &__form-btn,
+  &__btn{
+    margin-top: 30px;
+    width: 232px;
+    height: 70px;
+    position: relative;
+    font-size: 13px;
+    text-transform: uppercase;
+    svg{
+      position: absolute;
+      right: 16.5px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    span{
+      transform: translateY(2px);
+    }
+  }
+  &__form{
+    background: #FFFFFF;
+    border-radius: 30px;
+    width: 562px;
+    padding: 60px 75px;
+    &-title,
+    &-desc{
+      font-weight: 300;
+      line-height: 120%;
+      text-align: center;
+      letter-spacing: 0.02em;
+    }
+    &-title{
+      font-size: 45px;
+    }
+    &-desc{
+      font-size: 22px;
+      margin-top: 10px;
+    }
+    &-buttons{
+      display: flex;
+      align-items: center;
+      margin-top: 43px;
+    }
+    &-btn{
+      width: 197px;
+      margin: 0 42px 0 0;
+    }
+  }
+  &__fields{
+    margin-top: 24px;
+    .fg{
+      margin-bottom: 24px;
+    }
+  }
+  &__check{
+    margin-top: 50px;
+  }
+}
+
+
+.equip,
+.license{
+  overflow: hidden;
+  .swiper{
+    &-wrapper{
+      align-items: stretch;
+    }
+    &-slide{
+      height: auto;
+    }
+    &-pagination{
+      position: static;
+      margin-top: 60px;
+    }
+  }
+}
+
+.done-projects,
+.feedback,
+.services,
+.team,
+.project-process,
+.done-solution{
+  padding: 60px 0;
+  overflow: hidden;
+  .swiper{
+    &-wrapper{
+      align-items: stretch;
+    }
+    &-slide{
+      height: auto;
+    }
+    &-pagination{
+      position: static;
+      margin-top: 60px;
+    }
+  }
+}
+
+.solution{
+  padding: 60px 0;
+  &__items{
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(3, calc(33.33% - 20px));
+    gap: 30px;
+  }
+  &__item{
+    padding: 80px 55px;
+    background-size: cover;
+    border-radius: 20px;
+  }
+  &__desc{
+    margin-top: 30px;
+    max-width: 390px;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .main2 {
+    &__left{
+      padding-left: 55px;
+    }
+    &__title {
+        &::before {
+          top: 32px;
+          width: 39px;
+      }
+      &--small{
+        font-size: 80px;
+        &::before{
+          top: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px){
+  .main2{
+    &__left{
+      padding-left: 40px;
+    }
+    &__right{
+      margin-left: 20px;
+    }
+    &__form{
+      width: 460px;
+      padding: 35px 40px;
+      border-radius: 20px;
+    }
+  }
+
+  .solution{
+    &__item{
+      padding: 60px 25px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1200px){
+  .main2{
+    &__left{
+      padding-left: 30px;
+    }
+    &__title{
+      &::before{
+        top: 18px;
+        width: 35px;
+      }
+      &--small{
+        font-size: 72px;
+        &::before{
+          top: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px){
+  .main2{
+    padding: 40px 0;
+    &__inner{
+      display: block;
+    }
+    &__right{
+      margin: 40px 0 0;
+    }
+    &__form{
+      width: 100%;
+    }
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .main2 {
+    &__title {
+      &::before {
+        top: 2px;
+        width: 25px;
+      }
+      &--small{
+        font-size: 60px;
+        &::before{
+          top: 2px;
+        }
+      }
+    }
+    &__subtitle{
+      margin-top: 20px;
+    }
+    &__form-btn,
+    &__btn {
+      height: 55px;
+    }
+  }
+
+  .done-projects,
+  .channels,
+  .services,
+  .equip,
+  .license,
+  .feedback,
+  .team,
+  .project-process,
+  .done-solution{
+    padding: 30px 0;
+    &__inner{
+      position: relative;
+      padding-bottom: 70px;
+    }
+    .swiper-pagination{
+      margin-top: 30px;
+    }
+  }
+
+  .solution{
+    padding: 30px 0;
+    &__items{
+      margin-top: 30px;
+      grid-template-columns: 100%;
+      gap: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main2 {
+    &__left{
+      padding-left: 20px;
+    }
+    &__title {
+      &::before {
+        margin-right: 12px;
+        top: 12px;
+        height: 30px;
+        width: 20px;
+      }
+      &--small{
+        font-size: 45px;
+        &::before{
+          top: 7px;
+        }
+      }
+    }
+    &__form{
+      &-title{
+        font-size: 35px;
+      }
+      &-desc{
+        font-size: 18px;
+      }
+      &-buttons{
+        margin-top: 25px;
+      }
+    }
+    &__fields{
+      margin-top: 30px;
+      .fg{
+        margin-bottom: 15px;
+      }
+    }
+    &__check{
+      margin-top: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main2 {
+    &__left{
+      padding: 0;
+    }
+    &__title {
+      &::before {
+        top: 9px;
+        height: 25px;
+        width: 12px;
+        margin-right: 3px;
+      }
+      &--small{
+        font-size: 37px;
+      }
+    }
+    &__form-btn,
+    &__btn {
+      width: 100%;
+    }
+    &__form{
+      padding:30px 20px;
+      width: calc(100% + 40px);
+      margin-left: -20px;
+      &-buttons{
+        display: block;
+        text-align: center;
+      }
+      &-btn{
+        margin: 0 0 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"IT-аутсорсинг", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html')
+        <main class="content">
+
+            <secton class="main2" style="background-image: url(img/main-bg2.webp);">
+                <div class="container">
+                    <div class="main2__inner">
+                        <div class="main2__left">
+                            <h1 class="main2__title main2__title--small main2__title--small2 display1">
+                                IT-аутсорсинг
+                            </h1>
+                            <div class="main2__desc subtitle">Это комплекс услуг направленный на поддержаниеработоспособности всей информационной системы предприятия.</div>
+                            <div class="main2__subtitle">Интересует СМР и ПИР?</div>
+                            <a href="" class="main2__btn mbtn mbtn-white-linear">
+                                <span>перейти в раздел</span>
+                                <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.97974 7.54302L3.21141 0.61661C3.05356 0.395154 2.80201 0.401512 2.64955 0.630814C2.50082 0.854502 2.50082 1.20911 2.64955 1.43276L7.13695 7.9511L2.64955 14.4694C2.49442 14.6948 2.49442 15.0602 2.64955 15.2856C2.80473 15.5109 3.05626 15.5109 3.21141 15.2856L7.97974 8.35917C8.13488 8.13376 8.13488 7.7684 7.97974 7.54302Z" fill="#00BBE4"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="main2__right">
+                            <form action="" class="main2__form">
+                                <div class="main2__form-title">Оформить заявку </div>
+                                <div class="main2__form-desc">на подключение интернета</div>
+                                <div class="main2__fields">
+                                    <fieldset class="fg">
+                                        <input type="text" placeholder="Ваше Имя">
+                                    </fieldset>
+                                    <fieldset class="fg">
+                                        <input type="tel" placeholder="Ваш телефон">
+                                    </fieldset>
+                                    <fieldset class="fg">
+                                        <input type="email" placeholder="Ваш email">
+                                    </fieldset>
+                                </div>
+                                <div class="main2__check check">
+                                    <input type="checkbox" />
+                                    <label>Согласен с политикой конфиденциальности</label>
+                                </div>
+                                <div class="main2__form-buttons">
+                                    <button class="main2__form-btn mbtn mbtn-green-linear">
+                                        <span>Подключить</span>
+                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.3725 7.08843L4.4461 0.16202C4.2168 -0.0594359 3.8514 -0.0530777 3.62995 0.176224C3.4139 0.399912 3.4139 0.754519 3.62995 0.978173L10.1483 7.49651L3.62995 14.0148C3.4046 14.2402 3.4046 14.6056 3.62995 14.831C3.85536 15.0563 4.22072 15.0563 4.4461 14.831L11.3725 7.90458C11.5978 7.67917 11.5978 7.31381 11.3725 7.08843Z" fill="white"/>
+                                        </svg>
+                                    </button>
+                                    <a href="" class="main2__form-link text-link">Подробная форма</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </secton>
+
+            <section class="breadcrumbs">
+                <div class="container">
+                    <a href="index.html" class="breadcrumbs__item">Главная</a>
+                    <a href="" class="breadcrumbs__item">Для частных лиц</a>
+                    <span class="breadcrumbs__item">Интернет</span>
+                </div>
+            </section>
+
+            <section class="about">
+                @@include('components/page-blocks/_about.html',{"title":"Текстовый заголовок"})
+            </section>
+
+            <section class="apply-vacancies">
+                @@include('components/page-blocks/_apply-vacancies.html',{"title":"Нужна консультация?","bg":"vacancy4.png"})
+            </section>
+
+            <section class="faq before-bg before-bg--left">
+                <div class="container">
+                    <div class="faq__inner">
+                        <div class="faq__title display2">
+                            Какие задачи <br>
+                            мы решаем?
+                        </div>
+                        <div class="faq__items">
+                            <div class="qa-card">
+                                @@include('components/cards/_qa-card2.html',{"title":"Организация облачной инфраструктуры"})
+                            </div>
+                            <div class="qa-card">
+                                @@include('components/cards/_qa-card2.html',{"title":"Техническая поддержка 1С"})
+                            </div>
+                            <div class="qa-card">
+                                @@include('components/cards/_qa-card2.html',{"title":"Разработка и внедрение бизнес процессов"})
+                            </div>
+                            <div class="qa-card">
+                                @@include('components/cards/_qa-card2.html',{"title":"Доработка функционала в 1С"})
+                            </div>
+                            <div class="qa-card">
+                                @@include('components/cards/_qa-card2.html',{"title":"Помощь с внедрением IT решений"})
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="solution">
+                <div class="container">
+                    <div class="solution__title display2">Кому может подойти?</div>
+                    <div class="solution__items">
+                        <div class="solution__item" style="background-image: url(img/solution.jpg);">
+                            <div class="solution__subtitle display3">Ситуация 1</div>
+                            <div class="solution__desc body-text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает. Lorem Ipsum используют потому, что тот обеспечивает более </div>
+                        </div>
+                        <div class="solution__item" style="background-image: url(img/solution2.jpg);">
+                            <div class="solution__subtitle display3">Ситуация 2</div>
+                            <div class="solution__desc body-text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает. Lorem Ipsum используют потому, что тот обеспечивает более </div>
+                        </div>
+                        <div class="solution__item" style="background-image: url(img/solution3.jpg);">
+                            <div class="solution__subtitle display3">Ситуация 3</div>
+                            <div class="solution__desc body-text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает. Lorem Ipsum используют потому, что тот обеспечивает более </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="advantages">
+                @@include('components/page-blocks/_advantages.html')
+            </section>
+
+            <section class="apply-vacancies">
+                @@include('components/page-blocks/_apply-vacancies.html',{"title":"Нужна консультация?","bg":"vacancy5.png"})
+            </section>
+
+            <section class="license">
+                @@include('components/page-blocks/_license.html')
+            </section>
+
+            <section class="feedback">
+                @@include('components/page-blocks/_feedback.html')
+            </section>
+
+            <section id="info" class="info">
+                @@include('components/page-blocks/_info.html')
+            </section>
+
+        </main>
+        @@include('components/page-blocks/_footer.html')
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

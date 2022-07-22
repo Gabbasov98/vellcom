@@ -1,0 +1,209 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Конфигуратор", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html')
+        <main class="content">
+
+            <section class="breadcrumbs">
+                <div class="container">
+                    <a href="index.html" class="breadcrumbs__item">Главная</a>
+                    <a href="" class="breadcrumbs__item">О компании</a>
+                    <span class="breadcrumbs__item">Проекты</span>
+                </div>
+            </section>
+
+            <section class="config">
+                <div class="container">
+                    <div class="config__title display2">Конфигуратор</div>
+                    <form class="config__form">
+                        <div class="config__block">
+                            <fieldset class="fg config__address">
+                                <input type="text" placeholder="Ваш адрес">
+                            </fieldset>
+                            <div class="config-service">
+                                <div class="config-service__title">Услуги:</div>
+                                <div class="config-service__items">
+                                    <div class="config-service__item check">
+                                        <input type="checkbox">
+                                        <label>Интернет</label>
+                                    </div>
+                                    <div class="config-service__item check">
+                                        <input type="checkbox">
+                                        <label>Умный домофон</label>
+                                    </div>
+                                    <div class="config-service__item check">
+                                        <input type="checkbox">
+                                        <label>Телевидение</label>
+                                    </div>
+                                    <div class="config-service__item check">
+                                        <input type="checkbox">
+                                        <label>Дополнительное оборудование</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="config__block">
+                            <div class="config__subtitle">Интернет</div>
+                            <div class="config__items">
+                                <div class="config__item">
+                                    <div class="config__radio radio">
+                                        <input checked type="radio" name="internet">
+                                        <label>Для общения</label>
+                                    </div>
+                                    <div class="config__price">350₽ / Месяц</div>
+                                </div>
+                                <div class="config__item">
+                                    <div class="config__radio radio">
+                                        <input type="radio" name="internet">
+                                        <label>Базовый</label>
+                                    </div>
+                                    <div class="config__price">350₽ / Месяц</div>
+                                </div>
+                                <div class="config__item">
+                                    <div class="config__radio radio">
+                                        <input type="radio" name="internet">
+                                        <label>Профессиональный</label>
+                                    </div>
+                                    <div class="config__price">350₽ / Месяц</div>
+                                </div>
+                                <div class="config__item">
+                                    <div class="config__radio radio">
+                                        <input type="radio" name="internet">
+                                        <label>Премиум</label>
+                                    </div>
+                                    <div class="config__price">350₽ / Месяц</div>
+                                </div>
+                                <div class="config__item">
+                                    <div class="config__radio radio">
+                                        <input type="radio" name="internet">
+                                        <label>Свой дом 100</label>
+                                    </div>
+                                    <div class="config__price">350₽ / Месяц</div>
+                                </div>
+                                <div class="config__item">
+                                    <div class="config__radio radio">
+                                        <input type="radio" name="internet">
+                                        <label>Свой дом 200</label>
+                                    </div>
+                                    <div class="config__price">3050₽ / Месяц</div>
+                                </div>
+                            </div>
+
+                            <div class="add-service">
+                                <div class="add-service__title">Дополнительные услуги</div>
+                                <div class="config__items">
+                                    <div class="config__item">
+                                        <div class="config__check check">
+                                            <input type="checkbox">
+                                            <label>
+                                                <span>Настроенный роутер, при пополнении баланса на 1000 руб.</span>
+                                                <span class="tariff-card__hint">?</span>
+                                            </label>
+                                        </div>
+                                        <div class="config__price">1₽</div>
+                                    </div>
+                                    <div class="config__item">
+                                        <div class="config__check check">
+                                            <input type="checkbox">
+                                            <label>
+                                                <span>Статический IP-адрес</span>
+                                                <span class="tariff-card__hint">?</span>
+                                            </label>
+                                        </div>
+                                        <div class="config__price">300₽</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="config__block">
+                            <div class="config__subtitle">Телевидение</div>
+                            <div class="config__items">
+                                <div class="config__item">
+                                    <div class="config__radio radio">
+                                        <input checked type="radio" name="tv">
+                                        <label>Кабельное телевидение</label>
+                                    </div>
+                                    <div class="config__price">350₽ / Месяц</div>
+                                </div>
+                                <div class="config__item">
+                                    <div class="config__radio radio">
+                                        <input type="radio" name="tv">
+                                        <label>Окно в мир</label>
+                                    </div>
+                                    <div class="config__price">350₽ / Месяц</div>
+                                </div>
+                            </div>
+
+                            <div class="add-service">
+                                <div class="add-service__title">Дополнительные услуги</div>
+                                <div class="config__items">
+                                    <div class="config__item">
+                                        <div class="config__check check">
+                                            <input type="checkbox">
+                                            <label>
+                                                <span>Подключение 1 телевизова</span>
+                                                <span class="tariff-card__hint">?</span>
+                                            </label>
+                                        </div>
+                                        <div class="config__price">100₽</div>
+                                    </div>
+                                    <div class="config__item">
+                                        <div class="config__check check">
+                                            <input type="checkbox">
+                                            <label>
+                                                <span>Подключение доп. телевизоров</span>
+                                                <span class="tariff-card__hint">?</span>
+                                            </label>
+                                        </div>
+                                        <fieldset class="config__select fg">
+                                            <select class="my-select">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>15</option>
+                                            </select>
+                                        </fieldset>
+                                        <div class="config__price">300₽ / Штука</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="config__block">
+                            <div class="config__subtitle">Итого</div>
+                            <div class="config__items">
+                                <div class="config__item">
+                                    <div class="config__all">Регулярный платеж:</div>
+                                    <div class="config__price">350₽ / Месяц</div>
+                                </div>
+                                <div class="config__item">
+                                    <div class="config__all">Разовый платеж:</div>
+                                    <div class="config__price">350₽</div>
+                                </div>
+                                <div class="config__item">
+                                    <div class="config__all">Авансовый платеж:</div>
+                                    <div class="config__price">3500₽</div>
+                                </div>
+                            </div>
+                            <button class="config__btn mbtn mbtn-green-linear">
+                                <span>отправить заявку</span>
+                                <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.9385 7.08843L6.14864 0.16202C5.85765 -0.0594359 5.39395 -0.0530777 5.11292 0.176224C4.83875 0.399912 4.83875 0.754519 5.11292 0.978173L13.3849 7.49651L5.11292 14.0148C4.82694 14.2402 4.82694 14.6056 5.11292 14.831C5.39897 15.0563 5.86263 15.0563 6.14864 14.831L14.9385 7.90458C15.2245 7.67917 15.2245 7.31381 14.9385 7.08843Z" fill="#F2F7F9"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+        @@include('components/page-blocks/_footer.html')
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

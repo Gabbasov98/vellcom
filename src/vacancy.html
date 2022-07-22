@@ -1,0 +1,101 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Вакансия", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html')
+        <main class="content">
+
+            <secton class="main-vacancies">
+                <img src="img/vacancy.jpg" alt="">
+            </secton>
+
+            <section class="breadcrumbs">
+                <div class="container">
+                    <a href="index.html" class="breadcrumbs__item">Главная</a>
+                    <a href="" class="breadcrumbs__item">О компании</a>
+                    <span class="breadcrumbs__item">Вакансии</span>
+                </div>
+            </section>
+
+
+            <section class="vacancy">
+                <div class="container">
+                    <div class="vacancy__inner">
+                        <div class="vacancy__left">
+                            <div class="vacancy__title display2">Инженер по информационной безопасности</div>
+                            <div class="vacancy__groups">
+                                <div class="vacancy__group">
+                                    <div class="vacancy__subtitle">Присоединившись к нам, будет нужно:</div>
+                                    <ul class="vacancy__list mlist body-text">
+                                        <li>Администрировать, сопровождать и развивать системы защиты баз данных (Imperva) и системы привилегированных пользователей (PAM OneIdentity (Balabit));</li>
+                                        <li>Проводить аудит в сфере ИБ;</li>
+                                        <li>Принимать участие в расследовании инцидентов ИБ и обрабатывать поступающие заявки по линии ИБ.</li>
+                                    </ul>
+                                </div>
+                                <div class="vacancy__group">
+                                    <div class="vacancy__subtitle">Для нас важно:</div>
+                                    <ul class="vacancy__list mlist body-text">
+                                        <li>Высшее образование по профилю "Информационная безопасность" или переподготовка в сфере ИБ.</li>
+                                        <li>3+ опыта работы инженером ИБ</li>
+                                        <li>Навыки администрирования и работы с различными системами ИБ (Imperva OneIdentity (Balabit));</li>
+                                        <li>Знание и опыт работы с ActiveDirectory, Windows, Unix, Kali Linux, VmWare.</li>
+                                        <li>Умение работать со скриптами. Знание OSI.</li>
+                                        <li>Опыт проведения расследований по различным инцидентам ИБ</li>
+                                    </ul>
+                                </div>
+                                <div class="vacancy__group">
+                                    <div class="vacancy__subtitle">Мы предлагаем:</div>
+                                    <ul class="vacancy__list mlist body-text">
+                                        <li>Официальное оформление по ТК РФ</li>
+                                        <li>График работы 5/2 с 8.30 до 17.30</li>
+                                        <li>Белая заработная плата, уровень которой обсуждаем с успешным кандидатом</li>
+                                        <li>Служебную мобильную связь и скидки на услуги компании</li>
+                                        <li>Профессиональное обучение и развитие: тренинги, доступ базам знаний, онлайн-курсы по саморазвитию;</li>
+                                        <li>Работу в команде профессионалов своего дела</li>
+                                        <li>Корпоративные скидки от партнеров компании</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vacancy__right">
+                            <form action="" class="vacancy-form">
+                                <div class="vacancy-form__title">Откликнуться</div>
+                                <div class="vacancy-form__fields">
+                                    <fieldset class="fg">
+                                        <input type="text" placeholder="Ваше Имя">
+                                    </fieldset>
+                                    <fieldset class="fg">
+                                        <input type="tel" placeholder="Ваш телефон">
+                                    </fieldset>
+                                    <fieldset class="fg">
+                                        <input type="email" placeholder="Ваш email">
+                                    </fieldset>
+                                    <fieldset class="file-input">
+                                        @@include('components/ui/_file-input.html')
+                                    </fieldset>
+                                </div>
+                                <div class="vacancy-form__check check">
+                                    <input type="checkbox" />
+                                    <label>Отправляя заявку, я даю согласие на обработку персональных данных в рамках рассмотрения вопроса о принятии на работу соискателя на должность.</label>
+                                </div>
+                                <button class="vacancy-form__btn mbtn mbtn-green-linear">
+                                    <span>отправить</span>
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.3725 7.08843L4.4461 0.16202C4.2168 -0.0594359 3.8514 -0.0530777 3.62995 0.176224C3.4139 0.399912 3.4139 0.754519 3.62995 0.978173L10.1483 7.49651L3.62995 14.0148C3.4046 14.2402 3.4046 14.6056 3.62995 14.831C3.85536 15.0563 4.22072 15.0563 4.4461 14.831L11.3725 7.90458C11.5978 7.67917 11.5978 7.31381 11.3725 7.08843Z" fill="white"/>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        @@include('components/page-blocks/_footer.html')
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

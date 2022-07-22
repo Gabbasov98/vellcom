@@ -1,0 +1,190 @@
+@import "../vars";
+.config{
+  padding: 20px 0 60px;
+  &__form{
+    margin: 60px auto 0;
+    max-width: 100%;
+    width: 1050px;
+  }
+  &__block{
+    background-color: $bgBlue;
+    padding: 34px 34px 70px;
+    border-radius: 20px;
+    margin: 8px 0 0;
+  }
+  &__address{
+    max-width: 640px;
+    margin: 0 auto 0;
+    input{
+      height: 88px;
+      text-align: center;
+    }
+  }
+  &__subtitle{
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 214%;
+    text-align: center;
+  }
+  &__items{
+    max-width: 570px;
+    width: 100%;
+    margin: 32px auto 0;
+  }
+  &__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:not(:last-child){
+      margin-bottom: 21px;
+    }
+  }
+  &__check,
+  &__radio{
+    & label::before{
+      background-color: #fff;
+    }
+  }
+  &__price{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 161.9%;
+  }
+  &__select{
+    width: 97px;
+    flex-shrink: 0;
+    .my-select{
+      height: 42px;
+    }
+  }
+  &__all{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 161.9%;
+    letter-spacing: 0.03em;
+    color: #414141;
+  }
+  &__btn{
+    margin: 62px auto 0;
+    width: 250px;
+    height: 70px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #F2F7F9;
+    svg{
+      margin-left: 15px;
+    }
+  }
+}
+
+.config-service{
+  margin: 70px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 870px;
+  &__items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    flex-grow: 1;
+    label{
+      &::before{
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+.add-service{
+  margin-top: 55px;
+  &__title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .config{
+    padding: 10px 0 30px;
+    &__form{
+      margin-top: 30px;
+    }
+    &__block{
+      padding: 25px 25px 40px;
+    }
+    &__address{
+      max-width: 100%;
+      input{
+        height: 68px;
+        text-align: left;
+      }
+    }
+    &__subtitle{
+      text-align: left;
+      font-size: 22px;
+      line-height: 150%;
+    }
+    &__items{
+      margin-top: 20px;
+    }
+    &__item{
+      &:not(:last-child){
+        margin-bottom: 12px;
+      }
+    }
+    &__btn{
+      margin-top: 40px;
+    }
+  }
+
+  .config-service{
+    margin-top: 40px;
+    display: block;
+    &__items{
+      margin:20px 0 0 0;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    &__item{
+      margin: 10px 10px 0 0;
+    }
+  }
+
+  .add-service{
+    margin-top: 30px;
+    &__title{
+      text-align: left;
+      font-size: 17px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+  .config{
+    &__item{
+      display: block;
+    }
+    &__price,
+    &__select{
+      margin-top: 10px;
+      padding-left: 46px;
+    }
+    &__select{
+      width: 143px;
+    }
+    &__all{
+      &~*{
+        padding-left: 0;
+      }
+    }
+    &__btn{
+      margin-top: 25px;
+      width: 100%;
+    }
+  }
+}

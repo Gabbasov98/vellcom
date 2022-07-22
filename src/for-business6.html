@@ -1,0 +1,181 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"IT-аутсорсинг", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html')
+        <main class="content">
+
+            <secton class="main2" style="background-image: url(img/main-bg2.webp);">
+                <div class="container">
+                    <div class="main2__inner">
+                        <div class="main2__left">
+                            <h1 class="main2__title main2__title--small display1">
+                                <span>СМР и ПИР</span> в слаботочных системах
+                            </h1>
+                            <div class="main2__desc subtitle">Надёжное высокоскоростное подключение к интернету для вашей компании. Выгодные тарифы и возможность подключить дополнительные сервисы.</div>
+                        </div>
+                        <div class="main2__right">
+                            <form action="" class="main2__form">
+                                <div class="main2__form-title">Оформить заявку </div>
+                                <div class="main2__form-desc">на подключение интернета</div>
+                                <div class="main2__fields">
+                                    <fieldset class="fg">
+                                        <input type="text" placeholder="Ваше Имя">
+                                    </fieldset>
+                                    <fieldset class="fg">
+                                        <input type="tel" placeholder="Ваш телефон">
+                                    </fieldset>
+                                    <fieldset class="fg">
+                                        <input type="email" placeholder="Ваш email">
+                                    </fieldset>
+                                </div>
+                                <div class="main2__check check">
+                                    <input type="checkbox" />
+                                    <label>Согласен с политикой конфиденциальности</label>
+                                </div>
+                                <div class="main2__form-buttons">
+                                    <button class="main2__form-btn mbtn mbtn-green-linear">
+                                        <span>Подключить</span>
+                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.3725 7.08843L4.4461 0.16202C4.2168 -0.0594359 3.8514 -0.0530777 3.62995 0.176224C3.4139 0.399912 3.4139 0.754519 3.62995 0.978173L10.1483 7.49651L3.62995 14.0148C3.4046 14.2402 3.4046 14.6056 3.62995 14.831C3.85536 15.0563 4.22072 15.0563 4.4461 14.831L11.3725 7.90458C11.5978 7.67917 11.5978 7.31381 11.3725 7.08843Z" fill="white"/>
+                                        </svg>
+                                    </button>
+                                    <a href="" class="main2__form-link text-link">Подробная форма</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </secton>
+
+            <section class="breadcrumbs">
+                <div class="container">
+                    <a href="index.html" class="breadcrumbs__item">Главная</a>
+                    <a href="" class="breadcrumbs__item">Для частных лиц</a>
+                    <span class="breadcrumbs__item">Интернет</span>
+                </div>
+            </section>
+
+            <section class="advantages advantages--gray">
+                @@include('components/page-blocks/_advantages3.html')
+            </section>
+
+            <section class="about">
+                @@include('components/page-blocks/_about.html',{"title":"Департамент СМР и ПИР"})
+            </section>
+
+            <section class="about">
+                @@include('components/page-blocks/_about.html',{"title":"Текстовый заголовок"})
+            </section>
+
+            <section class="apply-vacancies">
+                @@include('components/page-blocks/_apply-vacancies.html',{"title":"Оставьте заяку на расчет","bg":"vacancy6.jpg"})
+            </section>
+
+            <section class="done-solution">
+                <div class="container">
+                    <div class="feedback__inner">
+                        <div class="slider__top">
+                            <div class="done-solution__title display2">Готовые решения</div>
+                        </div>
+
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="done-card swiper-slide" style="background: linear-gradient(0deg, #EFEFFF 18.16%, #EFEFFF 62.85%);">
+                                    @@include('components/cards/_done-card.html',{"title":"Объектовая СВН"})
+                                </div>
+                                <div class="done-card swiper-slide" style="background: linear-gradient(0deg, #DFFFED 18.16%, #DFFFED 62.85%);">
+                                    @@include('components/cards/_done-card.html',{"title":"СКУД"})
+                                </div>
+                                <div class="done-card swiper-slide" style="background: linear-gradient(0deg, #D5E9FF 18.16%, #D6EAFF 62.85%);">
+                                    @@include('components/cards/_done-card.html',{"title":"СКС"})
+                                </div>
+                                <div class="done-card swiper-slide" style="background: linear-gradient(0deg, #FFDEDE 18.16%, #FFDFDF 62.85%);">
+                                    @@include('components/cards/_done-card.html',{"title":"ЛВС"})
+                                </div>
+                                <div class="done-card swiper-slide" style="background: linear-gradient(360deg, #FFFAE4 27.09%, #FFFBE4 75.14%);">
+                                    @@include('components/cards/_done-card.html',{"title":"Безопасный регион"})
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq before-bg before-bg--left">
+                <div class="container">
+                    <div class="faq__inner">
+                        <div class="faq__title display2">
+                            Работы
+                        </div>
+                        <div class="faq__items">
+                            <div class="qa-card">
+                                @@include('components/cards/_qa-card3.html',{"title":"Техническое обсуживание"})
+                            </div>
+                            <div class="qa-card">
+                                @@include('components/cards/_qa-card3.html',{"title":"Монтаж"})
+                            </div>
+                            <div class="qa-card">
+                                @@include('components/cards/_qa-card3.html',{"title":"Разработка и согласование проектной документации"})
+                            </div>
+                            <div class="qa-card">
+                                @@include('components/cards/_qa-card3.html',{"title":"Вход в эксплуатацию"})
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="done-projects">
+                <div class="container">
+                    <div class="done-projects__inner">
+                        <div class="slider__top">
+                            <div class="done-projects__title display2">Выполненные проекты</div>
+                        </div>
+
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="project-card swiper-slide" style="background: linear-gradient(0deg, #EFEFFF 18.16%, #EFEFFF 62.85%);">
+                                    @@include('components/cards/_project-card.html',{"img":"project"})
+                                </div>
+                                <div class="project-card swiper-slide" style="background: linear-gradient(0deg, #EFEFFF 18.16%, #EFEFFF 62.85%);">
+                                    @@include('components/cards/_project-card.html',{"img":"project"})
+                                </div>
+                                <div class="project-card swiper-slide" style="background: linear-gradient(0deg, #EFEFFF 18.16%, #EFEFFF 62.85%);">
+                                    @@include('components/cards/_project-card.html',{"img":"project"})
+                                </div>
+                                <div class="project-card swiper-slide" style="background: linear-gradient(0deg, #EFEFFF 18.16%, #EFEFFF 62.85%);">
+                                    @@include('components/cards/_project-card.html',{"img":"project"})
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="advantages">
+                @@include('components/page-blocks/_advantages.html')
+            </section>
+
+            <section class="apply-vacancies">
+                @@include('components/page-blocks/_apply-vacancies.html',{"title":"Нужна консультация?","bg":"vacancy7.jpg"})
+            </section>
+
+            <section class="license">
+                @@include('components/page-blocks/_license.html')
+            </section>
+
+            <section class="feedback">
+                @@include('components/page-blocks/_feedback.html')
+            </section>
+
+        </main>
+        @@include('components/page-blocks/_footer.html')
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

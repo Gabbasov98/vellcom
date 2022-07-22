@@ -1,0 +1,6 @@
+@import '../_mixins';
+@include font-face('Helvetica', 'HelveticaLight', 300);
+@include font-face('Helvetica', 'HelveticaRegular', 400);
+@include font-face('Helvetica', 'HelveticaMedium', 500);
+@include font-face('Helvetica', 'HelveticaBold', 700);
+@include font-face('PT Sans', 'PTSans-Bold', 700);

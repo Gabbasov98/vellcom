@@ -1,0 +1,38 @@
+@import "../vars";
+.error404{
+  padding: 20px 0 60px;
+  &__img{
+    margin: 20px auto 0;
+    width: 602px;
+    max-width: 100%;
+    img{
+      display: block;
+      width: 100%;
+    }
+  }
+  &__subtitle{
+    margin-top: 15px;
+    text-align: center;
+  }
+  &__desc{
+    margin: 30px 0 100px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 150%;
+    font-weight: 700;
+    color: #656F73;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .error404{
+    padding: 10px 0 30px;
+    &__img{
+      width: 420px;
+    }
+    &__desc{
+      font-size: 16px;
+      margin: 10px 0 20px;
+    }
+  }
+}

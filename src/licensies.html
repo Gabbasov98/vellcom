@@ -1,0 +1,102 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Проекты", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html')
+        <main class="content">
+
+            <section class="breadcrumbs">
+                <div class="container">
+                    <a href="index.html" class="breadcrumbs__item">Главная</a>
+                    <a href="" class="breadcrumbs__item">О компании</a>
+                    <span class="breadcrumbs__item">Проекты</span>
+                </div>
+            </section>
+
+            <section class="content-page">
+                <div class="container">
+                    <div class="content-page__title display2">Проекты</div>
+                    <div class="filter">
+                        <div class="filter__group">
+                            <div class="filter__title">Тип:</div>
+                            <div class="filter__items">
+                                <div class="filter__item check">
+                                    <input type="checkbox">
+                                    <label>Лицензии</label>
+                                </div>
+                                <div class="filter__item check">
+                                    <input type="checkbox">
+                                    <label>Сертификаты</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter__group">
+                            <div class="filter__title">Направление бизнеса:</div>
+                            <div class="filter__items">
+                                <div class="filter__item check">
+                                    <input type="checkbox">
+                                    <label>Интернет</label>
+                                </div>
+                                <div class="filter__item check">
+                                    <input type="checkbox">
+                                    <label>Телефония</label>
+                                </div>
+                                <div class="filter__item check">
+                                    <input type="checkbox">
+                                    <label>1С</label>
+                                </div>
+                                <div class="filter__item check">
+                                    <input type="checkbox">
+                                    <label>Телевидение</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-page__items">
+                        <div class="license-card">
+                            <div class="license-card__badge" style="background: #8782FF;">Интернет</div>
+                            @@include('components/cards/_license-card.html',{"img":"license"})
+                        </div>
+                        <div class="license-card">
+                            <div class="license-card__badge" style="background: #89C0FE;">Телефония</div>
+                            @@include('components/cards/_license-card.html',{"img":"license2"})
+                        </div>
+                        <div class="license-card">
+                            <div class="license-card__badge" style="background: #D479FF;">1С</div>
+                            @@include('components/cards/_license-card.html',{"img":"license"})
+                        </div>
+                        <div class="license-card">
+                            <div class="license-card__badge" style="background: #FDB4FF;">Телевидение</div>
+                            @@include('components/cards/_license-card.html',{"img":"license2"})
+                        </div>
+                        <div class="license-card">
+                            <div class="license-card__badge" style="background: #8782FF;">Интернет</div>
+                            @@include('components/cards/_license-card.html',{"img":"license"})
+                        </div>
+                        <div class="license-card">
+                            <div class="license-card__badge" style="background: #89C0FE;">Телефония</div>
+                            @@include('components/cards/_license-card.html',{"img":"license2"})
+                        </div>
+                        <div class="license-card">
+                            <div class="license-card__badge" style="background: #D479FF;">1С</div>
+                            @@include('components/cards/_license-card.html',{"img":"license"})
+                        </div>
+                        <div class="license-card">
+                            <div class="license-card__badge" style="background: #FDB4FF;">Телевидение</div>
+                            @@include('components/cards/_license-card.html',{"img":"license2"})
+                        </div>
+                    </div>
+                    <div class="content-page__bottom">
+                        @@include('components/page-blocks/_page-nav.html')
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        @@include('components/page-blocks/_footer.html')
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="info__inner">
+        <div class="map">
+            <div id="map2" class="map__block"></div>
+            <div class="map__content">
+                <div class="map__title display3">Карта сети</div>
+                <div class="map__address">г. Лыткарино, ул. Ленина</div>
+                <a href="tel:+74959999999" class="map__phone">+7 (495) 999-99-99</a>
+                <a href="" class="map__link text-link">В контакты</a>
+            </div>
+        </div>
+        <div class="info__text">
+            <div class="info__title display3">Текстовый блок</div>
+            <div class="info__desc body-text">
+                <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." </p>
+                <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно.</p>
+            </div>
+            <a href="" class="info__link text-link">Подробнее</a>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    ymaps.ready(init);
+
+    function init() {
+        var myMap2 = new ymaps.Map("map2", {
+            center: [55.577434, 37.900515],
+            zoom: 14
+        });
+
+        const addMark = () => {
+            var myPlacemark = new ymaps.Placemark([55.577434, 37.900515], null, {
+                iconLayout: 'default#image',
+                iconImageHref: "img/mark2.svg",
+                iconImageSize: [36, 36],
+                iconImageOffset: [29, -29],
+            });
+
+            myMap2.geoObjects.add(myPlacemark);
+        }
+        addMark()
+    }
+</script>

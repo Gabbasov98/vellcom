@@ -12,7 +12,7 @@
                             <h1 class="main2__title main2__title--small display1">
                                 <span>СМР и ПИР</span> в слаботочных системах
                             </h1>
-                            <div class="main2__desc subtitle">Надёжное высокоскоростное подключение к интернету для вашей компании. Выгодные тарифы и возможность подключить дополнительные сервисы.</div>
+                            <div class="main2__desc main2__desc--mt80 subtitle">Надёжное высокоскоростное подключение к интернету для вашей компании. Выгодные тарифы и возможность подключить дополнительные сервисы.</div>
                         </div>
                         <div class="main2__right">
                             <form action="" class="main2__form">
@@ -61,18 +61,31 @@
             </section>
 
             <section class="about">
-                @@include('components/page-blocks/_about.html',{"title":"Департамент СМР и ПИР"})
+                @@include('components/page-blocks/_about.html',{"title":"Департамент СМР и ПИР","socials":""})
+            </section>
+
+            <section class="anchor">
+                <div class="container">
+                    <div class="anchor__inner">
+                        <a href="#form" class="anchor__link">Оставить заявку</a>
+                        <a href="#done-solution" class="anchor__link">Готовые решения</a>
+                        <a href="#works" class="anchor__link">Работы</a>
+                        <a href="#projects" class="anchor__link">Выполненные проекты</a>
+                        <a href="#feedback" class="anchor__link">Наши отзывы </a>
+                        <a href="#license" class="anchor__link">Лицензии </a>
+                    </div>
+                </div>
             </section>
 
             <section class="about">
-                @@include('components/page-blocks/_about.html',{"title":"Текстовый заголовок"})
+                @@include('components/page-blocks/_about.html',{"title":"Текстовый заголовок","socials":""})
             </section>
 
-            <section class="apply-vacancies">
+            <section id="form" class="apply-vacancies">
                 @@include('components/page-blocks/_apply-vacancies.html',{"title":"Оставьте заяку на расчет","bg":"vacancy6.jpg"})
             </section>
 
-            <section class="done-solution">
+            <section id="done-solution" class="done-solution">
                 <div class="container">
                     <div class="feedback__inner">
                         <div class="slider__top">
@@ -103,7 +116,7 @@
                 </div>
             </section>
 
-            <section class="faq before-bg before-bg--left">
+            <section id="works" class="faq before-bg before-bg--left">
                 <div class="container">
                     <div class="faq__inner">
                         <div class="faq__title display2">
@@ -127,7 +140,7 @@
                 </div>
             </section>
 
-            <section class="done-projects">
+            <section id="projects" class="done-projects">
                 <div class="container">
                     <div class="done-projects__inner">
                         <div class="slider__top">
@@ -136,18 +149,18 @@
 
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
-                                <div class="project-card swiper-slide" style="background: linear-gradient(0deg, #EFEFFF 18.16%, #EFEFFF 62.85%);">
+                                <a href="" class="project-card swiper-slide" style="background: linear-gradient(0deg, #EFEFFF 18.16%, #EFEFFF 62.85%);">
                                     @@include('components/cards/_project-card.html',{"img":"project"})
-                                </div>
-                                <div class="project-card swiper-slide" style="background: linear-gradient(0deg, #EFEFFF 18.16%, #EFEFFF 62.85%);">
+                                </a>
+                                <a href="" class="project-card swiper-slide" style="background: linear-gradient(0deg, #EFEFFF 18.16%, #EFEFFF 62.85%);">
                                     @@include('components/cards/_project-card.html',{"img":"project"})
-                                </div>
-                                <div class="project-card swiper-slide" style="background: linear-gradient(0deg, #EFEFFF 18.16%, #EFEFFF 62.85%);">
+                                </a>
+                                <a href="" class="project-card swiper-slide" style="background: linear-gradient(0deg, #EFEFFF 18.16%, #EFEFFF 62.85%);">
                                     @@include('components/cards/_project-card.html',{"img":"project"})
-                                </div>
-                                <div class="project-card swiper-slide" style="background: linear-gradient(0deg, #EFEFFF 18.16%, #EFEFFF 62.85%);">
+                                </a>
+                                <a href="" class="project-card swiper-slide" style="background: linear-gradient(0deg, #EFEFFF 18.16%, #EFEFFF 62.85%);">
                                     @@include('components/cards/_project-card.html',{"img":"project"})
-                                </div>
+                                </a>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
@@ -155,20 +168,16 @@
                 </div>
             </section>
 
-            <section class="advantages">
-                @@include('components/page-blocks/_advantages.html')
-            </section>
-
             <section class="apply-vacancies">
                 @@include('components/page-blocks/_apply-vacancies.html',{"title":"Нужна консультация?","bg":"vacancy7.jpg"})
             </section>
 
-            <section class="license">
-                @@include('components/page-blocks/_license.html')
+            <section id="feedback" class="feedback">
+                @@include('components/page-blocks/_feedback.html')
             </section>
 
-            <section class="feedback">
-                @@include('components/page-blocks/_feedback.html')
+            <section id="license" class="license">
+                @@include('components/page-blocks/_license.html')
             </section>
 
         </main>

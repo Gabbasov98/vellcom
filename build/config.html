@@ -95,7 +95,11 @@
                     <form class="config__form">
                         <div class="config__block">
                             <fieldset class="fg config__address">
-                                <input type="text" placeholder="Ваш адрес">
+                                <select class="my-select">
+                                    <option disabled selected hidden>Ваш адрес</option>
+                                    <option value="">адрес 1</option>
+                                    <option value="">адрес 2</option>
+                                </select>
                             </fieldset>
                             <div class="config-service">
                                 <div class="config-service__title">Услуги:</div>
@@ -451,6 +455,34 @@
 
     <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
+<script type="text/javascript">
+
+    let map = document.getElementById("map2")
+    if(map){
+        ymaps.ready(init);
+    }
+
+
+    function init() {
+        var myMap2 = new ymaps.Map("map2", {
+            center: [55.577434, 37.900515],
+            zoom: 14
+        });
+
+        const addMark = () => {
+            var myPlacemark = new ymaps.Placemark([55.577434, 37.900515], null, {
+                iconLayout: 'default#image',
+                iconImageHref: "img/mark2.svg",
+                iconImageSize: [36, 36],
+                iconImageOffset: [29, -29],
+            });
+
+            myMap2.geoObjects.add(myPlacemark);
+            myMap2.behaviors.disable(['scrollZoom']);
+        }
+        addMark()
+    }
+</script>
 
 </body>
 

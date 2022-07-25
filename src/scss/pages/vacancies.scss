@@ -66,6 +66,12 @@
 
 .apply-vacancies{
   padding: 60px 0;
+  &--pb150{
+    padding-bottom: 150px;
+  }
+  &--pb250{
+    padding-bottom: 250px;
+  }
   &__inner{
     background-size: cover;
     border-radius: 20px;

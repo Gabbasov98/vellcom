@@ -58,16 +58,30 @@
     span{
       color: $primary;
     }
+    &--129{
+      @media screen and (min-width: 1700px){
+        font-size: 129px;
+      }
+    }
   }
   &__desc{
     max-width: 1060px;
     margin-top: 20px;
+    &--mt50{
+      margin-top: 50px;
+    }
+    &--mt80{
+      margin-top: 80px;
+    }
   }
   &__subtitle{
     font-weight: 300;
     font-size: 24px;
     letter-spacing: 0.02em;
     margin-top: 40px;
+    &--mt80{
+      margin-top: 80px;
+    }
   }
   &__form-btn,
   &__btn{

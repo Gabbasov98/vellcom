@@ -32,13 +32,12 @@
                         <a href="#feedback" class="anchor__link">Отзывы</a>
                         <a href="#history" class="anchor__link">История </a>
                         <a href="#docs" class="anchor__link">Документы</a>
-                        <a href="#info" class="anchor__link">Оставить заявку</a>
                     </div>
                 </div>
             </section>
 
             <section id="about" class="about">
-                @@include('components/page-blocks/_about.html',{"title":"О компании"})
+                @@include('components/page-blocks/_about.html',{"title":"О компании","socials":"true"})
             </section>
 
             <section id="advantages" class="advantages">
@@ -53,18 +52,18 @@
                             <div class="about-services__subtitle display3">Для частных лиц:</div>
                             <div class="about-services__slider about-services__slider1 swiper-container">
                                 <div class="swiper-wrapper">
-                                    <div class="about-services__item swiper-slide" style="background-image: url(img/service.jpg);">
+                                    <a href="" class="about-services__item swiper-slide" style="background-image: url(img/service.jpg);">
                                         <div class="about-services__item-title">Интернет</div>
-                                    </div>
-                                    <div class="about-services__item swiper-slide" style="background-image: url(img/service2.png);">
+                                    </a>
+                                    <a href="" class="about-services__item swiper-slide" style="background-image: url(img/service2.png);">
                                         <div class="about-services__item-title">Телевидение</div>
-                                    </div>
-                                    <div class="about-services__item swiper-slide" style="background-image: url(img/service3.png);">
+                                    </a>
+                                    <a href="" class="about-services__item swiper-slide" style="background-image: url(img/service3.png);">
                                         <div class="about-services__item-title">Умный домофон</div>
-                                    </div>
-                                    <div class="about-services__item swiper-slide" style="background-image: url(img/service4.png);">
+                                    </a>
+                                    <a href="" class="about-services__item swiper-slide" style="background-image: url(img/service4.png);">
                                         <div class="about-services__item-title">Видеонаблюдение</div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -72,21 +71,21 @@
                             <div class="about-services__subtitle display3">Для частных лиц:</div>
                             <div class="about-services__slider about-services__slider2 swiper-container">
                                 <div class="swiper-wrapper">
-                                    <div class="about-services__item2 swiper-slide" style="background-image: url(img/service5.jpg);">
+                                    <a href="" class="about-services__item2 swiper-slide" style="background-image: url(img/service5.jpg);">
                                         <div class="about-services__item2-title">Интернет</div>
-                                    </div>
-                                    <div class="about-services__item2 swiper-slide" style="background-image: url(img/service6.png);">
+                                    </a>
+                                    <a href="" class="about-services__item2 swiper-slide" style="background-image: url(img/service6.png);">
                                         <div class="about-services__item2-title">IT-Аутсорс </div>
-                                    </div>
-                                    <div class="about-services__item2 swiper-slide" style="background-image: url(img/service7.png);">
+                                    </a>
+                                    <a href="" class="about-services__item2 swiper-slide" style="background-image: url(img/service7.png);">
                                         <div class="about-services__item2-title">Телефония</div>
-                                    </div>
-                                    <div class="about-services__item2 swiper-slide" style="background-image: url(img/service8.png);">
+                                    </a>
+                                    <a href="" class="about-services__item2 swiper-slide" style="background-image: url(img/service8.png);">
                                         <div class="about-services__item2-title">Аренда каналов связи</div>
-                                    </div>
-                                    <div class="about-services__item2 swiper-slide" style="background-image: url(img/service9.png);">
+                                    </a>
+                                    <a href="" class="about-services__item2 swiper-slide" style="background-image: url(img/service9.png);">
                                         <div class="about-services__item2-title">СМР и ПИР в слаботочных системах</div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -195,10 +194,6 @@
                         <a href="" class="docs__item">@@include('components/ui/_doc-link.html',{"title":"Название документа"})</a>
                     </div>
                 </div>
-            </section>
-
-            <section class="info">
-                @@include('components/page-blocks/_info.html')
             </section>
 
         </main>

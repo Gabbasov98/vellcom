@@ -21,25 +21,4 @@
 </div>
 
 
-<script type="text/javascript">
-    ymaps.ready(init);
 
-    function init() {
-        var myMap2 = new ymaps.Map("map2", {
-            center: [55.577434, 37.900515],
-            zoom: 14
-        });
-
-        const addMark = () => {
-            var myPlacemark = new ymaps.Placemark([55.577434, 37.900515], null, {
-                iconLayout: 'default#image',
-                iconImageHref: "img/mark2.svg",
-                iconImageSize: [36, 36],
-                iconImageOffset: [29, -29],
-            });
-
-            myMap2.geoObjects.add(myPlacemark);
-        }
-        addMark()
-    }
-</script>

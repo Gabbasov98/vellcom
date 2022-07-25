@@ -22,6 +22,16 @@
     font-weight: 700;
     color: #656F73;
   }
+  &__link{
+    width: 197px;
+    height: 70px;
+    margin: 123px auto 0;
+    font-size: 13px;
+    text-transform: uppercase;
+    svg{
+      margin-left: 22px;
+    }
+  }
 }
 
 @media screen and (max-width: 992px){
@@ -33,6 +43,9 @@
     &__desc{
       font-size: 16px;
       margin: 10px 0 20px;
+    }
+    &__link{
+      margin-top: 40px;
     }
   }
 }

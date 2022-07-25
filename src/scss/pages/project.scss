@@ -98,7 +98,8 @@
       grid-template-columns: auto 600px;
     }
     &__left{
-      max-width: 938px;
+      max-width: 1048px;
+      padding-left: 110px;
     }
   }
   .feedback-card{
@@ -146,6 +147,9 @@
     .about{
       &__inner{
         grid-template-columns: auto 420px;
+      }
+      &__left{
+        padding: 0;
       }
     }
   }

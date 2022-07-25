@@ -89,7 +89,7 @@
                                 <span>Аренда</span> каналов связи
                             </h1>
                             <div class="main2__desc subtitle">Надёжное высокоскоростное подключение к интернету для вашей компании. Выгодные тарифы и возможность подключить дополнительные сервисы.</div>
-                            <div class="main2__subtitle">Интересует СМР и ПИР?</div>
+                            <div class="main2__subtitle main2__subtitle--mt80">Интересует СМР и ПИР?</div>
                             <a href="" class="main2__btn mbtn mbtn-white-linear">
                                 <span>перейти в раздел</span>
                                 <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -257,15 +257,6 @@
                     <div class="tariff__inner">
                         <div class="tariff__top flex-center">
                             <div class="tariff__title display2">Выберите тариф</div>
-                            <div class="tariff__buttons flex-center">
-                                <button class="tariff__btn mbtn mbtn-blue-outline">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M11.3725 7.08843L4.4461 0.16202C4.2168 -0.0594359 3.8514 -0.0530777 3.62995 0.176224C3.4139 0.399912 3.4139 0.754519 3.62995 0.978173L10.1483 7.49651L3.62995 14.0148C3.4046 14.2402 3.4046 14.6056 3.62995 14.831C3.85536 15.0563 4.22072 15.0563 4.4461 14.831L11.3725 7.90458C11.5978 7.67917 11.5978 7.31381 11.3725 7.08843Z" fill="#3D3D3D"/>
-</svg>
-<span>Все тарифы</span>
-
-                                </button>
-                            </div>
                         </div>
                         <div class="tariff__slider swiper-container">
                             <div class="swiper-wrapper">
@@ -455,7 +446,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tariff__link text-link">Тарифы междугородней и международной связи</div>
                     </div>
                 </div>
             </section>
@@ -592,28 +582,7 @@
 </div>
 
 
-<script type="text/javascript">
-    ymaps.ready(init);
 
-    function init() {
-        var myMap2 = new ymaps.Map("map2", {
-            center: [55.577434, 37.900515],
-            zoom: 14
-        });
-
-        const addMark = () => {
-            var myPlacemark = new ymaps.Placemark([55.577434, 37.900515], null, {
-                iconLayout: 'default#image',
-                iconImageHref: "img/mark2.svg",
-                iconImageSize: [36, 36],
-                iconImageOffset: [29, -29],
-            });
-
-            myMap2.geoObjects.add(myPlacemark);
-        }
-        addMark()
-    }
-</script>
 
             </section>
 
@@ -793,6 +762,34 @@
 
     <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
+<script type="text/javascript">
+
+    let map = document.getElementById("map2")
+    if(map){
+        ymaps.ready(init);
+    }
+
+
+    function init() {
+        var myMap2 = new ymaps.Map("map2", {
+            center: [55.577434, 37.900515],
+            zoom: 14
+        });
+
+        const addMark = () => {
+            var myPlacemark = new ymaps.Placemark([55.577434, 37.900515], null, {
+                iconLayout: 'default#image',
+                iconImageHref: "img/mark2.svg",
+                iconImageSize: [36, 36],
+                iconImageOffset: [29, -29],
+            });
+
+            myMap2.geoObjects.add(myPlacemark);
+            myMap2.behaviors.disable(['scrollZoom']);
+        }
+        addMark()
+    }
+</script>
 
 </body>
 

@@ -190,7 +190,7 @@
                                             <p>Предварительные выводы неутешительны: новая модель организационной деятельности способствует подготовке и реализации своевременного выполнения сверхзадачи. Значимость этих проблем настолько очевидна, что выбранный нами инновационный путь, в своём классическом представлении, допускает внедрение своевременного выполнения сверхзадачи.</p>
                                         </div>
                                         <div class="about__socials">
-                                            <div class="about__socials-title">Мы в соц сетях:</div>
+                                            <div class="about__socials-title">Поделиться:</div>
                                             <div class="about__socials-items">
                                                 <a href="" class="about__socials-item">
                                                     <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -263,7 +263,7 @@
                 </div>
             </section>
 
-            <section class="apply-vacancies">
+            <section class="apply-vacancies apply-vacancies--pb250">
                 <div class="container">
     <div class="apply-vacancies__inner" style="background-image: url(img/vacancy8.png);">
         <div class="apply-vacancies__title">
@@ -280,10 +280,10 @@
                     <input type="text" placeholder="ФИО*">
                 </fieldset>
                 <fieldset class="fg">
-                    <input type="email" placeholder="Ваш email">
+                    <input type="tel" placeholder="Телефон">
                 </fieldset>
                 <fieldset class="fg apply-vacancies__full">
-                    <input type="email" placeholder="Сообщение">
+                    <input type="text" placeholder="Сообщение">
                 </fieldset>
             </div>
             <div class="apply-vacancies__check check">
@@ -478,6 +478,34 @@
 
     <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
+<script type="text/javascript">
+
+    let map = document.getElementById("map2")
+    if(map){
+        ymaps.ready(init);
+    }
+
+
+    function init() {
+        var myMap2 = new ymaps.Map("map2", {
+            center: [55.577434, 37.900515],
+            zoom: 14
+        });
+
+        const addMark = () => {
+            var myPlacemark = new ymaps.Placemark([55.577434, 37.900515], null, {
+                iconLayout: 'default#image',
+                iconImageHref: "img/mark2.svg",
+                iconImageSize: [36, 36],
+                iconImageOffset: [29, -29],
+            });
+
+            myMap2.geoObjects.add(myPlacemark);
+            myMap2.behaviors.disable(['scrollZoom']);
+        }
+        addMark()
+    }
+</script>
 
 </body>
 

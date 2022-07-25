@@ -191,8 +191,8 @@
         path{
           fill:#fff;
         }
-        &--empty{
-          background: #37DBFF;
+        &.check label::before{
+          background-color: #37DBFF;
         }
       }
       &__desc{
@@ -231,6 +231,22 @@
     &--empty{
       background-color: #fff;
     }
+    &.check{
+      background-color: transparent;
+      label{
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        &::before{
+          background-color: #fff;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  &__check{
+
   }
   &__desc,
   &__title{

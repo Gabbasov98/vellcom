@@ -34,6 +34,7 @@
     border-radius: 10px;
     color: #fff;
     &:hover{
+        background: linear-gradient(284.88deg, #00BBE4 32.8%, #A2D537 118.11%);
         color: #fff;
         box-shadow: 0px 20px 50px rgba(100, 212, 219, 0.35);
     }
@@ -45,6 +46,7 @@
     border-radius: 10px;
     color: $primary;
     &:hover{
+        background: #E8FBFF;
         color: $primary;
         box-shadow: 0px 20px 50px rgba(100, 212, 219, 0.35);
     }
@@ -53,6 +55,9 @@
 .mbtn-white-linear{
     box-shadow: 0px 20px 50px rgba(100, 212, 219, 0.25);
     background: linear-gradient(85.41deg, #FFFFFF 60.54%, #FFFFFF 102.22%);
+    &:hover{
+        background: #E8FBFF;
+    }
 }
 
 .mbtn-white{

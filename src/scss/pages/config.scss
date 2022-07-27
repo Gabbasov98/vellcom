@@ -49,6 +49,9 @@
     & label::before{
       background-color: #fff;
     }
+    .tariff-card__hint{
+      z-index: 3;
+    }
   }
   &__price{
     font-weight: 700;
@@ -111,6 +114,17 @@
     font-size: 20px;
     line-height: 120%;
   }
+}
+
+.config-part{
+  display: none;
+  &--active{
+    display: block;
+  }
+}
+
+.config-all{
+  display: none;
 }
 
 @media screen and (max-width: 992px){

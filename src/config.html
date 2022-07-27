@@ -38,26 +38,26 @@
                                 <div class="config-service__title">Услуги:</div>
                                 <div class="config-service__items">
                                     <div class="config-service__item check">
-                                        <input type="checkbox">
+                                        <input type="checkbox" data-block="1">
                                         <label>Интернет</label>
                                     </div>
                                     <div class="config-service__item check">
-                                        <input type="checkbox">
-                                        <label>Умный домофон</label>
-                                    </div>
-                                    <div class="config-service__item check">
-                                        <input type="checkbox">
+                                        <input type="checkbox" data-block="2">
                                         <label>Телевидение</label>
                                     </div>
                                     <div class="config-service__item check">
-                                        <input type="checkbox">
+                                        <input type="checkbox" data-block="3">
+                                        <label>Умный домофон</label>
+                                    </div>
+                                    <div class="config-service__item check">
+                                        <input type="checkbox" data-block="4">
                                         <label>Дополнительное оборудование</label>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="config__block">
+                        <div class="config__block config-part" data-block="1">
                             <div class="config__subtitle">Интернет</div>
                             <div class="config__items">
                                 <div class="config__item">
@@ -65,42 +65,54 @@
                                         <input checked type="radio" name="internet">
                                         <label>Для общения</label>
                                     </div>
-                                    <div class="config__price">350₽ / Месяц</div>
+                                    <div class="config__price">
+                                        <span class="month-price">350</span>₽ / Месяц
+                                    </div>
                                 </div>
                                 <div class="config__item">
                                     <div class="config__radio radio">
                                         <input type="radio" name="internet">
                                         <label>Базовый</label>
                                     </div>
-                                    <div class="config__price">350₽ / Месяц</div>
+                                    <div class="config__price">
+                                        <span class="month-price">350</span>₽ / Месяц
+                                    </div>
                                 </div>
                                 <div class="config__item">
                                     <div class="config__radio radio">
                                         <input type="radio" name="internet">
                                         <label>Профессиональный</label>
                                     </div>
-                                    <div class="config__price">350₽ / Месяц</div>
+                                    <div class="config__price">
+                                        <span class="month-price">350</span>₽ / Месяц
+                                    </div>
                                 </div>
                                 <div class="config__item">
                                     <div class="config__radio radio">
                                         <input type="radio" name="internet">
                                         <label>Премиум</label>
                                     </div>
-                                    <div class="config__price">350₽ / Месяц</div>
+                                    <div class="config__price">
+                                        <span class="month-price">350</span>₽ / Месяц
+                                    </div>
                                 </div>
                                 <div class="config__item">
                                     <div class="config__radio radio">
                                         <input type="radio" name="internet">
                                         <label>Свой дом 100</label>
                                     </div>
-                                    <div class="config__price">350₽ / Месяц</div>
+                                    <div class="config__price">
+                                        <span class="month-price">350</span>₽ / Месяц
+                                    </div>
                                 </div>
                                 <div class="config__item">
                                     <div class="config__radio radio">
                                         <input type="radio" name="internet">
                                         <label>Свой дом 200</label>
                                     </div>
-                                    <div class="config__price">3050₽ / Месяц</div>
+                                    <div class="config__price">
+                                        <span class="month-price">3050</span>₽ / Месяц
+                                    </div>
                                 </div>
                             </div>
 
@@ -108,30 +120,34 @@
                                 <div class="add-service__title">Дополнительные услуги</div>
                                 <div class="config__items">
                                     <div class="config__item">
-                                        <div class="config__check check">
-                                            <input type="checkbox">
+                                        <div class="config__check config__check--avans check">
+                                            <input type="checkbox" data-avans-sum="1000">
                                             <label>
                                                 <span>Настроенный роутер, при пополнении баланса на 1000 руб.</span>
-                                                <span class="tariff-card__hint">?</span>
+                                                @@include('components/ui/_hint.html')
                                             </label>
                                         </div>
-                                        <div class="config__price">1₽</div>
+                                        <div class="config__price">
+                                            <span class="avans-price">1</span>₽
+                                        </div>
                                     </div>
                                     <div class="config__item">
-                                        <div class="config__check check">
+                                        <div class="config__check config__check--once check">
                                             <input type="checkbox">
                                             <label>
                                                 <span>Статический IP-адрес</span>
-                                                <span class="tariff-card__hint">?</span>
+                                                @@include('components/ui/_hint.html')
                                             </label>
                                         </div>
-                                        <div class="config__price">300₽</div>
+                                        <div class="config__price">
+                                            <span class="once-price">300</span>₽
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="config__block">
+                        <div class="config__block config-part" data-block="2">
                             <div class="config__subtitle">Телевидение</div>
                             <div class="config__items">
                                 <div class="config__item">
@@ -139,14 +155,18 @@
                                         <input checked type="radio" name="tv">
                                         <label>Кабельное телевидение</label>
                                     </div>
-                                    <div class="config__price">350₽ / Месяц</div>
+                                    <div class="config__price">
+                                        <span class="month-price">350</span>₽ / Месяц
+                                    </div>
                                 </div>
                                 <div class="config__item">
                                     <div class="config__radio radio">
                                         <input type="radio" name="tv">
                                         <label>Окно в мир</label>
                                     </div>
-                                    <div class="config__price">350₽ / Месяц</div>
+                                    <div class="config__price">
+                                        <span class="month-price">350</span>₽ / Месяц
+                                    </div>
                                 </div>
                             </div>
 
@@ -154,51 +174,145 @@
                                 <div class="add-service__title">Дополнительные услуги</div>
                                 <div class="config__items">
                                     <div class="config__item">
-                                        <div class="config__check check">
-                                            <input type="checkbox">
+                                        <div class="config__check config__check--once check">
+                                            <input disabled checked type="checkbox">
                                             <label>
                                                 <span>Подключение 1 телевизова</span>
-                                                <span class="tariff-card__hint">?</span>
+                                                @@include('components/ui/_hint.html')
                                             </label>
                                         </div>
-                                        <div class="config__price">100₽</div>
+                                        <div class="config__price">
+                                            <span class="once-price">100</span>₽
+                                        </div>
                                     </div>
                                     <div class="config__item">
-                                        <div class="config__check check">
-                                            <input type="checkbox">
+                                        <div class="config__check config__check--once check">
+                                            <input type="checkbox" class="tv">
                                             <label>
                                                 <span>Подключение доп. телевизоров</span>
-                                                <span class="tariff-card__hint">?</span>
+                                                @@include('components/ui/_hint.html')
                                             </label>
                                         </div>
                                         <fieldset class="config__select fg">
-                                            <select class="my-select">
+                                            <select class="my-select tv-num">
                                                 <option>1</option>
                                                 <option>2</option>
                                                 <option>3</option>
                                                 <option>15</option>
                                             </select>
                                         </fieldset>
-                                        <div class="config__price">300₽ / Штука</div>
+                                        <div class="config__price">
+                                            <span class="tv-price">300</span>₽ / Штука
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="config__block">
+                        <div class="config__block config-part" data-block="3">
+                            <div class="config__subtitle">Умный домофон</div>
+                            <div class="config__items">
+                                <div class="config__item">
+                                    <div class="config__radio radio">
+                                        <input checked type="radio" name="smartIntercom">
+                                        <label>Умный домофон</label>
+                                    </div>
+                                    <div class="config__price">
+                                        <span class="month-price">50</span>₽ / Месяц
+                                    </div>
+                                </div>
+                                <div class="config__item">
+                                    <div class="config__radio radio">
+                                        <input type="radio" name="smartIntercom">
+                                        <label>Умный домофон</label>
+                                    </div>
+                                    <div class="config__price">
+                                        <span class="month-price">150</span>₽ / Месяц
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="config__block config-part" data-block="4">
+                            <div class="config__subtitle">Дополнительное оборудование</div>
+                            <div class="config__items">
+                                <div class="config__item">
+                                    <div class="config__check config__check--once check">
+                                        <input type="checkbox">
+                                        <label>Оборудование GPON</label>
+                                    </div>
+                                    <div class="config__price">
+                                        <span class="once-price">1000</span>₽
+                                    </div>
+                                </div>
+                                <div class="config__item">
+                                    <div class="config__check config__check--once check">
+                                        <input type="checkbox">
+                                        <label>Wi-Fi роутер Xiaomi Redmi AX5</label>
+                                    </div>
+                                    <div class="config__price">
+                                        <span class="once-price">500</span>₽
+                                    </div>
+                                </div>
+                                <div class="config__item">
+                                    <div class="config__check config__check--once check">
+                                        <input type="checkbox">
+                                        <label>Xiaomi Mi Router 4A Gigabit Edition</label>
+                                    </div>
+                                    <div class="config__price">
+                                        <span class="once-price">500</span>₽
+                                    </div>
+                                </div>
+                                <div class="config__item">
+                                    <div class="config__check config__check--once check">
+                                        <input type="checkbox">
+                                        <label>Wi-Fi роутер TP-LINK Archer C80</label>
+                                    </div>
+                                    <div class="config__price">
+                                        <span class="once-price">500</span>₽
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="add-service">
+                                <div class="add-service__title">Дополнительные услуги</div>
+                                <div class="config__items">
+                                    <div class="config__item">
+                                        <div class="config__check config__check--once check">
+                                            <input type="checkbox">
+                                            <label>
+                                                <span>Настройка роутера</span>
+                                                @@include('components/ui/_hint.html')
+                                            </label>
+                                        </div>
+                                        <div class="config__price">
+                                            <span class="once-price">100</span>₽
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="config__block config-all">
                             <div class="config__subtitle">Итого</div>
                             <div class="config__items">
                                 <div class="config__item">
                                     <div class="config__all">Регулярный платеж:</div>
-                                    <div class="config__price">350₽ / Месяц</div>
+                                    <div class="config__price">
+                                        <span class="month-sum">350</span>₽ / Месяц
+                                    </div>
                                 </div>
                                 <div class="config__item">
                                     <div class="config__all">Разовый платеж:</div>
-                                    <div class="config__price">350₽</div>
+                                    <div class="config__price">
+                                        <span class="once-sum">350</span>₽
+                                    </div>
                                 </div>
                                 <div class="config__item">
                                     <div class="config__all">Авансовый платеж:</div>
-                                    <div class="config__price">3500₽</div>
+                                    <div class="config__price">
+                                        <span class="avans-sum">3500</span>₽
+                                    </div>
                                 </div>
                             </div>
                             <button class="config__btn mbtn mbtn-green-linear">

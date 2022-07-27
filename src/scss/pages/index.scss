@@ -158,6 +158,10 @@
   }
   &__item{
     height: auto;
+    transition: all .3s;
+    &:hover{
+      box-shadow: 0 20px 50px rgba(100,212,219,.25);
+    }
   }
 }
 

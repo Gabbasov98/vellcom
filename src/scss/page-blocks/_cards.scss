@@ -42,8 +42,10 @@
   overflow: hidden;
   background-size: cover;
   background-position: right top;
+  transition: all .3s;
   &:hover{
     color: $black;
+    box-shadow: 0px 20px 50px rgba(100, 212, 219, 0.25);
   }
   &__img{
     position: absolute;
@@ -498,6 +500,7 @@
   display: block;
   border-radius: 20px;
   overflow: hidden;
+  transition: all .3s;
   &:hover{
     box-shadow: 0px 20px 50px rgba(100, 212, 219, 0.25);
   }

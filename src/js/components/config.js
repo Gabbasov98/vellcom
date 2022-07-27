@@ -79,6 +79,8 @@ function showBlocks(){
     }
 }
 
+showBlocks()
+
 $(".config-service__item input").change(function () {
     showBlocks()
 })

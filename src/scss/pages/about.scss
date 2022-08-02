@@ -72,9 +72,15 @@
     align-items: flex-end;
     justify-content: center;
     height: 360px;
+    transition: all .3s;
+    position: relative;
     &-title{
       letter-spacing: 0.01em;
       text-align: center;
+    }
+    &:hover{
+      z-index: 2;
+      transform: scale3d(1.1,1.1,1.1);
     }
   }
   &__item{
@@ -114,11 +120,24 @@
   }
   .history-card{
     height: auto;
+    transition: all .3s;
     &:nth-child(3n - 1){
       transform: translateY(110px);
+      &:hover{
+        z-index: 2;
+        transform:translateY(110px) scale3d(1.1,1.1,1.1);
+      }
     }
     &:nth-child(3n){
       transform: translateY(220px);
+      &:hover{
+        z-index: 2;
+        transform:translateY(220px) scale3d(1.1,1.1,1.1);
+      }
+    }
+    &:hover{
+      z-index: 2;
+      transform: scale3d(1.1,1.1,1.1);
     }
   }
   &__line{

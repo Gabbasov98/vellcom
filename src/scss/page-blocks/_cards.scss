@@ -3,7 +3,13 @@
   border-radius: 20px;
   position: relative;
   overflow: hidden;
+  &:hover{
+    .service-card__img{
+      transform: scale(1.1);
+    }
+  }
   &__img{
+    transition: all .3s;
     display: block;
     width: 100%;
     height: 100%;
@@ -77,6 +83,18 @@
   &__link{
     margin-top: 42.5px;
     width: 145px;
+  }
+}
+
+.business-card2{
+  .business-card{
+    &__link{
+      background-color: $primary;
+      color: #fff;
+      path{
+        fill:#fff;
+      }
+    }
   }
 }
 
@@ -173,6 +191,14 @@
   padding: 42px;
   background: #ECFAFF;
   border-radius: 20px;
+  transition: all .3s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  &:hover{
+    z-index: 2;
+    transform: scale3d(1.15,1.15,1.15);
+  }
   &--yellow{
     background: #FFFDC5;
     .tariff-card__desc{
@@ -247,9 +273,6 @@
       }
     }
   }
-  &__check{
-
-  }
   &__desc,
   &__title{
     font-size: 15px;
@@ -282,7 +305,7 @@
     line-height: 32px;
     color: $primary;
     text-align: center;
-    margin-top: 47.5px;
+    margin: 47.5px 0 51px;
     &-month{
       font-size: 19px;
       font-weight: 400;
@@ -291,7 +314,7 @@
   &__btn{
     width: 197px;
     height: 70px;
-    margin: 51px auto 0;
+    margin: auto auto 0;
     font-size: 13px;
     text-transform: uppercase;
     svg{
@@ -734,13 +757,12 @@
     }
     &__price{
       font-size: 40px;
-      margin-top: 30px;
+      margin: 30px 0;
       &-month{
         font-size: 16px;
       }
     }
     &__btn{
-      margin-top: 30px;
       width: 100%;
     }
   }

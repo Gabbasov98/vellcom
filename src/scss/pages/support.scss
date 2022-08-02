@@ -107,6 +107,20 @@
     display: grid;
     grid-template-columns: 490px auto;
     gap: 30px 98px;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        height: calc(100% + 130px);
+        width: calc(100% - 392px);
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $bgBlue;
+        border-radius: 20px;
+      }
+
   }
   .about{
     &__inner{

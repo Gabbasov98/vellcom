@@ -3,6 +3,14 @@
 @import 'components/_buttons.scss';
 @import 'components/_fonts.scss';
 
+.animate-cards{
+    transform: translateY(50px);
+    transition: all .3s;
+    &--active{
+        transform: translateY(0px);
+    }
+}
+
 .slider{
     &__top{
         display: flex;

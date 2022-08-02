@@ -179,6 +179,11 @@
     width: 507px;
     max-width: 32%;
     padding: 107px 50px 90px;
+    transition: all .3s;
+    &:hover{
+      z-index: 2;
+      transform: scale3d(1.1,1.1,1.1);
+    }
   }
   &__subtitle{
     font-weight: 700;

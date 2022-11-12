@@ -74,8 +74,8 @@ function servicesSlider() {
 
 function cahnnelsSlider() {
     var swiper = new Swiper('.channels .swiper-container', {
-        slidesPerView: 4,
-        spaceBetween: 30,
+        slidesPerView: 8,
+        spaceBetween: 10,
         // slidesPerColumn: 2,
         navigation: {
             nextEl: '.channels .swiper-button-next',
@@ -84,20 +84,30 @@ function cahnnelsSlider() {
         breakpoints: {
             320: {
                 slidesPerView: 1,
-                spaceBetween: 20
             },
             450: {
                 slidesPerView: 1.2,
-                spaceBetween: 20
             },
-            800: {
-                slidesPerView: 2,
+            576: {
+                slidesPerView: 2.2,
             },
-            1200: {
-                slidesPerView: 3,
+            768: {
+                slidesPerView: 3.2,
+            },
+            992: {
+                slidesPerView: 4,
+            },
+            1100: {
+                slidesPerView: 5,
+            },
+            1400: {
+                slidesPerView: 6,
+            },
+            1600: {
+                slidesPerView: 7,
             },
             1700: {
-                slidesPerView: 4,
+                slidesPerView: 8,
             },
         }
     })

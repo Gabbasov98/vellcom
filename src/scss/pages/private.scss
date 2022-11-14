@@ -136,6 +136,9 @@
       grid-template-columns: repeat(1,1fr);
     }
   }
+  &__head{
+    margin-bottom: 60px;
+  }
 }
 
 .service-detail{
@@ -495,6 +498,9 @@
     &__grid,
     &__bottom{
       margin-top: 30px;
+    }
+    &__head{
+      margin-bottom: 40px;
     }
   }
 }

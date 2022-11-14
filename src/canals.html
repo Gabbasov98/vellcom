@@ -1,4 +1,4 @@
-<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Тарифы", "description":"", "keywords":"",})
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Каналы", "description":"", "keywords":"",})
 
 <body>
     <div class="wrapper">
@@ -9,13 +9,14 @@
                 <div class="container">
                     <a href="index.html" class="breadcrumbs__item">Главная</a>
                     <a href="" class="breadcrumbs__item">О компании</a>
-                    <span class="breadcrumbs__item">Проекты</span>
+                    <span class="breadcrumbs__item">Каналы</span>
                 </div>
             </section>
 
             <section class="tariff-page">
                 <div class="container">
-                    <div class="tariff-page__title display2">Аналоговые каналы</div>
+                    <h1 class="channels__head display2">Каналы</h1>
+                    <h2 class="tariff-page__title display2">Аналоговые каналы</h2>
                     <div class="channels__grid">
                         @@include('components/cards/_channel-card.html',{"img":"channel"})
                         @@include('components/cards/_channel-card.html',{"img":"channel2"})
@@ -33,7 +34,7 @@
 
             <section class="tariff-page">
                 <div class="container">
-                    <div class="tariff-page__title display2">Цифровые каналы</div>
+                    <h2 class="tariff-page__title display2">Цифровые каналы</h2>
                     <div class="channels__grid">
                         @@include('components/cards/_channel-card.html',{"img":"channel"})
                         @@include('components/cards/_channel-card.html',{"img":"channel2"})

@@ -25,3 +25,29 @@ $(window).scroll(function() {
         }
     });
 });
+
+
+$(".nav__item").hover(onIn, onOut);
+$(".nav__show").click(function () {
+    if (window.innerWidth <= 992){
+        $(this).siblings(".nav__hidden").slideToggle()
+    }
+})
+
+
+function onIn() {
+    if (window.innerWidth > 992) {
+        let el = $(this)
+        setTimeout(function() {
+            if (el.is(':hover')) {
+                el.addClass("_active")
+            }
+        }, 200);
+    }
+}
+
+function onOut() {
+    if (window.innerWidth > 992) {
+        $(this).removeClass("_active")
+    }
+}

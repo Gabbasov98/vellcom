@@ -148,6 +148,34 @@
   }
 }
 
+.scroll-up {
+  position: fixed;
+  width: 114px;
+  height: 114px;
+  border-radius: 50%;
+  bottom: 50px;
+  right: 35px;
+  z-index: 8;
+  opacity: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 27px 0;
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 230%;
+  &--active {
+    opacity: 1;
+  }
+  &:hover{
+    svg{
+      transform: unset;
+    }
+  }
+}
+
 
 @media screen and (max-width: 1300px){
   .footer{
@@ -188,6 +216,16 @@
       gap: 10px;
       margin-top: 15px;
       padding-top: 15px;
+    }
+  }
+
+  .scroll-up{
+    padding: 0;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    span{
+      display: none;
     }
   }
 }

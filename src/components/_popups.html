@@ -197,6 +197,186 @@
     </div>
 </div>
 
+<div class="modal modal-config show" style="display: block;" id="configModal2" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.976746 19.9999C0.783574 19.9999 0.59473 19.9427 0.434101 19.8354C0.273473 19.7281 0.148276 19.5755 0.0743471 19.3971C0.000418327 19.2186 -0.0189212 19.0222 0.0187748 18.8328C0.0564708 18.6433 0.149509 18.4693 0.28612 18.3327L18.333 0.285822C18.5162 0.102657 18.7646 -0.000244141 19.0236 -0.000244141C19.2827 -0.000244141 19.5311 0.102657 19.7143 0.285822C19.8974 0.468987 20.0003 0.717412 20.0003 0.976447C20.0003 1.23548 19.8974 1.48391 19.7143 1.66707L1.66737 19.7139C1.57676 19.8047 1.4691 19.8767 1.35059 19.9258C1.23207 19.9749 1.10502 20.0001 0.976746 19.9999Z" fill="#B5B5B5"/>
+                <path d="M19.0236 19.9999C18.8953 20.0001 18.7682 19.9749 18.6497 19.9258C18.5312 19.8767 18.4236 19.8047 18.3329 19.7139L0.286066 1.66707C0.102901 1.48391 0 1.23548 0 0.976447C0 0.717412 0.102901 0.468987 0.286066 0.285822C0.469231 0.102657 0.717657 -0.000244141 0.976691 -0.000244141C1.23573 -0.000244141 1.48415 0.102657 1.66732 0.285822L19.7142 18.3327C19.8508 18.4693 19.9438 18.6433 19.9815 18.8328C20.0192 19.0222 19.9999 19.2186 19.926 19.3971C19.852 19.5755 19.7268 19.7281 19.5662 19.8354C19.4056 19.9427 19.2167 19.9999 19.0236 19.9999Z" fill="#B5B5B5"/>
+            </svg>
+        </button>
+
+        <div class="modal__title">Подробная форма</div>
 
 
-<!-- <div class="modal-backdrop show"></div>-->
+
+        <form class="modal__form">
+            <div class="modal-config__title">Услуги:</div>
+            <div class="modal-config__services _add-info">
+                <div class="filter__group">
+                    <div class="filter__title">Телеком</div>
+                    <div class="filter__items">
+                        <div class="filter__item check">
+                            <input data-info="1" type="checkbox">
+                            <label>Интернет</label>
+                        </div>
+                        <div class="filter__item check">
+                            <input data-info="2" type="checkbox">
+                            <label>Телефония</label>
+                        </div>
+                        <div class="filter__item check">
+                            <input data-info="3" type="checkbox">
+                            <label>Аренда каналов связи</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter__group">
+                    <div class="filter__title">IT</div>
+                    <div class="filter__items filter__items2">
+                        <div class="filter__item check">
+                            <input data-info="4" type="checkbox">
+                            <label>Сопровождение 1С</label>
+                        </div>
+                        <div class="filter__item check">
+                            <input data-info="5" type="checkbox">
+                            <label>Виртуализация</label>
+                        </div>
+                        <div class="filter__item check">
+                            <input data-info="6" type="checkbox">
+                            <label>Телефония для офиса</label>
+                        </div>
+                        <div class="filter__item check">
+                            <input data-info="7" type="checkbox">
+                            <label>Автоматизация процессов</label>
+                        </div>
+                        <div class="filter__item check">
+                            <input data-info="8" type="checkbox">
+                            <label>Мониторинг оборудования</label>
+                        </div>
+                        <div class="filter__item check">
+                            <input data-info="9" type="checkbox">
+                            <label>Видеонаблюдение</label>
+                        </div>
+                        <div class="filter__item check">
+                            <input data-info="10" type="checkbox">
+                            <label>Серверное оборудование</label>
+                        </div>
+                        <div class="filter__item check">
+                            <input data-info="11" type="checkbox">
+                            <label>Строительство и проектирование СКС</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-config__grid1">
+                <fieldset class="fg">
+                    <input type="text" placeholder="ИНН организации">
+                </fieldset>
+                <fieldset class="fg">
+                    <input type="text" placeholder="Наименование организации">
+                </fieldset>
+                <fieldset class="fg">
+                    <input type="text" placeholder="ОКВЭД">
+                </fieldset>
+                <fieldset class="fg modal-config__full">
+                    <input type="text" placeholder="Юридический адрес">
+                </fieldset>
+                <fieldset class="fg modal-config__full">
+                    <input type="text" placeholder="Адрес предоставления услуг">
+                </fieldset>
+                <fieldset class="fg">
+                    <input type="text" placeholder="Контактное лицо">
+                </fieldset>
+                <fieldset class="fg">
+                    <input type="tel" placeholder="Телефон">
+                </fieldset>
+                <fieldset class="fg">
+                    <input type="email" placeholder="E-mail">
+                </fieldset>
+            </div>
+
+            <div class="more-info">
+                <div class="modal-config__title">Дополнительные вопросы</div>
+                <div data-info="1" class="more-info__group">
+                    <div class="filter__title">Интернет</div>
+                    <div class="more-info__fields">
+                        <fieldset class="fg">
+                            <input type="text" placeholder="Количество пользователей услугой">
+                        </fieldset>
+                    </div>
+                </div>
+                <div data-info="3" class="more-info__group">
+                    <div class="filter__title">Аренда каналов связи</div>
+                    <div class="more-info__fields">
+                        <fieldset class="fg">
+                            <input type="text" placeholder="Адрес предоставления услуг Точка А">
+                        </fieldset>
+                        <fieldset class="fg">
+                            <input type="text" placeholder="Адрес предоставления услуг Точка Б">
+                        </fieldset>
+                        <fieldset class="fg">
+                            <input type="text" placeholder="Скорость">
+                        </fieldset>
+                        <fieldset class="fg">
+                            <input type="text" placeholder="Требование каналу">
+                        </fieldset>
+                    </div>
+                </div>
+                <div data-info="11" class="more-info__group">
+                    <div class="filter__title">Строительство и проектирование СКС</div>
+                    <div class="more-info__fields">
+                        <fieldset class="fg">
+                            <label>Где?</label>
+                            <select class="my-select">
+                                <option selected>Офис</option>
+                                <option>Дом</option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="fg">
+                            <label>Что надо сделать?</label>
+                            <select class="my-select">
+                                <option selected>Видеонаблюдение(объектовая СВН)</option>
+                                <option>Видеонаблюдение2</option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="fg">
+                            <textarea placeholder="Пожелание к заказу"></textarea>
+                        </fieldset>
+                        <fieldset class="file-input">
+                            <label>
+                                <span>Прикрепить ТЗ</span>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.1111 6.42677C17.1058 6.43268 17.1003 6.43845 17.0947 6.44407L7.23075 16.3081C6.38693 17.1519 5.38614 17.593 4.32312 17.593C4.24236 17.593 4.16129 17.5905 4.07987 17.5853C3.06435 17.5216 2.07913 17.0607 1.30573 16.2873C0.532326 15.5139 0.0713578 14.5287 0.0076547 13.5131C-0.0646968 12.3597 0.376971 11.2702 1.28488 10.3623L11.1165 0.53072C11.2813 0.365978 11.5484 0.366013 11.7132 0.53072C11.8779 0.695498 11.8779 0.962615 11.7132 1.12736L1.88152 10.9589C0.26317 12.5773 0.757889 14.5462 1.90237 15.6907C3.04688 16.8351 5.01577 17.3298 6.63411 15.7115L16.4895 5.85612C17.5719 4.6356 17.2057 3.2381 16.3605 2.39298C15.5154 1.54783 14.1179 1.1816 12.8974 2.2641L6.60054 8.5609C5.76885 9.39259 6.00721 10.3755 6.61235 10.9807C7.21753 11.5858 8.20046 11.8241 9.03216 10.9924L14.4817 5.54295C14.6464 5.37817 14.9135 5.37817 15.0783 5.54295C15.243 5.70772 15.243 5.9748 15.0783 6.13958L9.62879 11.5891C8.44666 12.7712 6.91642 12.4779 6.01575 11.5773C5.11508 10.6767 4.82184 9.14639 6.0039 7.9643L12.3095 1.65881C12.315 1.65322 12.3208 1.64777 12.3267 1.6425C13.0561 0.990986 13.9141 0.687482 14.8077 0.765107C15.5973 0.833591 16.3606 1.19981 16.9571 1.79634C17.5537 2.39284 17.9199 3.15622 17.9884 3.94583C18.066 4.83947 17.7626 5.69739 17.1111 6.42677Z" fill="black"></path>
+                                </svg>
+                            </label>
+                            <input type="file">
+
+                            <div class="file-input__hint">
+                                <div class="file-input__can">Разрешены типы: doc, pdf, docx</div>
+                                <a href="" download="" class="file-input__download text-link">Скачать шаблон</a>
+                            </div>
+
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-config__hint">После введения данных Вам на указанный номер придёт сообщение с подтверждением, и с Вами свяжется наш оператор</div>
+
+            <div class="modal__check check">
+                <input checked type="checkbox" />
+                <label>Согласен с политикой конфиденциальности</label>
+            </div>
+            <button class="modal__btn mbtn mbtn-green-linear">
+                <span>отправить</span>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.3725 7.08843L4.4461 0.16202C4.2168 -0.0594359 3.8514 -0.0530777 3.62995 0.176224C3.4139 0.399912 3.4139 0.754519 3.62995 0.978173L10.1483 7.49651L3.62995 14.0148C3.4046 14.2402 3.4046 14.6056 3.62995 14.831C3.85536 15.0563 4.22072 15.0563 4.4461 14.831L11.3725 7.90458C11.5978 7.67917 11.5978 7.31381 11.3725 7.08843Z" fill="white"/>
+                </svg>
+            </button>
+        </form>
+    </div>
+</div>
+
+
+
+ <div class="modal-backdrop show"></div>

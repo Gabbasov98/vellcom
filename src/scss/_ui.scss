@@ -3,6 +3,16 @@
 @import 'components/_buttons.scss';
 @import 'components/_fonts.scss';
 
+.m-dropdown{
+    position: relative;
+    display: grid;
+    grid-template-columns: 100%;
+    background: #FFFFFF;
+    border: 1px solid #F6F7F8;
+    box-shadow: 0px 25px 31px rgba(225, 231, 240, 0.71);
+    border-radius: 8px;
+}
+
 .animate-cards{
     transform: translateY(50px);
     transition: all .3s;
@@ -107,7 +117,8 @@
     position: relative;
     select,
     input,
-    .my-select{
+    .my-select,
+    textarea{
         border: none;
         border-bottom: 1px solid #8AA2AC;
         padding: 0 25px;
@@ -121,6 +132,10 @@
         &::placeholder {
             color: #8AA2AC;
         }
+    }
+    textarea{
+        height: 200px;
+        resize: none;
     }
     .my-select{
         background: transparent url(../img/arrow-down.svg) no-repeat right 12px center !important;
